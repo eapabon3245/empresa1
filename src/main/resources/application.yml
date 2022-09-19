@@ -1,7 +1,4 @@
 # src/main/resources/application.yml
-app:
-  server:
-    port: {$PORT}
 spring:
   security:
     oauth2:
