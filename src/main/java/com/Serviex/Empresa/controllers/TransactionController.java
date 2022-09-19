@@ -59,7 +59,7 @@ public class TransactionController {
         transaction1.setAmount(transaction.getAmount());
         if(transaction.getIdEnterprice()> 0){
             var e = this.enterpriceService.getEnterprice(transaction.getIdEnterprice());
-            transaction1.setEntreprice(e);
+            transaction1.setEnterprice(e);
         }
 
         this.service.createTransaction(transaction1);
