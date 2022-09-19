@@ -90,8 +90,8 @@
 						</configuration>
 					</execution>
 				</executions>
-				<configuration>
 				
+
 			</plugin>
 		</plugins>
 	</build>
