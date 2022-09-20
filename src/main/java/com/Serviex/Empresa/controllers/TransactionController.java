@@ -34,7 +34,12 @@ public class TransactionController {
 
         List<Transaction> transactions= this.service.getTransactions();
         model.addAttribute("transactions", transactions);
-
+        float total=0;
+        for (int i=0; i< transactions.stream().count(); i++)
+        {
+            total =total +transactions.get(i).getAmount();
+        }
+        model.addAttribute("total", total);
         return modelAndView;
     }
     @GetMapping("/newTransaction")
